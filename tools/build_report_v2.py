@@ -117,9 +117,10 @@ def main():
 
     # ———————————————————— 1 ————————————————————
     h("1. GitHub 链接")
+    p("本项目代码仓库：https://github.com/yuu-hub-fuu/lowlight-video-kb（含全部代码、训练好的权重、实验记录与测试；数据请用仓库中的下载脚本从作者公开源获取）。")
     p("对照方法 Zero-DCE：https://github.com/Li-Chongyi/Zero-DCE（固定版本 e0f4adc54d0f，原网络与权重未改动）[1]。")
     p("数据集 SDSD：https://github.com/JIA-Lab-research/SDSD [2]。双边网格思想来自 HDRNet [3]，本项目为独立的轻量实现。")
-    p("本项目代码随附件提供（3.可选附件或代码/lowlight_video_project），运行方式见 README.md，来源与许可见 THIRD_PARTY.md。")
+    p("同一份代码也随附件提供（3.可选附件或代码/lowlight_video_project），运行方式见 README.md，来源与许可见 THIRD_PARTY.md。")
 
     # ———————————————————— 2 ————————————————————
     h("2. 任务描述：要解决什么问题")
