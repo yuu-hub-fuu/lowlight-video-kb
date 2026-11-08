@@ -1,0 +1,7 @@
+{
+  "change": "Corrected obsolete training description inherited from initial configuration; no model or numerical parameter changed",
+  "frozen_sha256": "c6f26c1d7f08c035f982218aff8c2c154de3506b99f1239c6c7a164bdab199d8",
+  "fields_changed": [
+    "training"
+  ]
+}

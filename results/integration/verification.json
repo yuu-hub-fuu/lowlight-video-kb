@@ -1,0 +1,42 @@
+[
+  {
+    "file": "input_silent",
+    "frames": 10,
+    "size": [
+      320,
+      176
+    ],
+    "fps": 10.0,
+    "audio_codec": null
+  },
+  {
+    "file": "enhanced_silent",
+    "frames": 10,
+    "size": [
+      320,
+      176
+    ],
+    "fps": 10.0,
+    "audio_codec": null
+  },
+  {
+    "file": "input_audio",
+    "frames": 10,
+    "size": [
+      320,
+      176
+    ],
+    "fps": 10.0,
+    "audio_codec": "aac"
+  },
+  {
+    "file": "enhanced_audio",
+    "frames": 10,
+    "size": [
+      320,
+      176
+    ],
+    "fps": 10.0,
+    "audio_codec": "aac"
+  }
+]

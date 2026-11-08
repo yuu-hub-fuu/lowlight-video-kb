@@ -1,0 +1,22 @@
+{
+  "extracted_to": "<本地解压目录>",
+  "all_passed": true,
+  "code_and_weight_bytes_match": true,
+  "runs": {
+    "unit_tests": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_curve_identity_and_bounds (test_core.CoreTests.test_curve_identity_and_bounds) ... ok\ntest_cut_detector (test_core.CoreTests.test_cut_detector) ... ok\ntest_metrics_reference (test_core.CoreTests.test_metrics_reference) ... ok\ntest_motion_alignment_preserves_translated_structure (test_core.CoreTests.test_motion_alignment_preserves_translated_structure) ... ok\ntest_ssim_matches_independent_implementation (test_core.CoreTests.test_ssim_matches_independent_implementation) ... ok\ntest_state_reset_and_first_frame (test_core.CoreTests.test_state_reset_and_first_frame) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.705s\n\nOK\n"
+    },
+    "smoke": {
+      "exit_code": 0,
+      "stdout": "Finished pair1: 3 paired consecutive frames\n{\n  \"Gamma\": {\n    \"psnr\": 13.602445476269104,\n    \"ssim\": 0.6389719049135844,\n    \"tce\": 0.02754336129873991,\n    \"brightness_flicker\": 0.0008869841694831848,\n    \"network_ms\": 462.5673666669172,\n    \"extra_ms\": 0.0\n  },\n  \"Input\": {\n    \"psnr\": 7.015589291444113,\n    \"ssim\": 0.3246635893980662,\n    \"tce\": 0.016630372032523155,\n    \"brightness_flicker\": 1.1324882507324219e-06,\n    \"network_ms\": 462.5673666669172,\n    \"extra_ms\": 0.0\n  },\n  \"Temporal\": {\n    \"psnr\": 14.867905089380079,\n    \"ssim\": 0.6348992983500162,\n    \"tce\": 0.030028002336621284,\n    \"brightness_flicker\": 0.0007105991244316101,\n    \"network_ms\": 462.5673666669172,\n    \"extra_ms\": 119.49873333408807\n  },\n  \"ZeroDCE\": {\n    \"psnr\": 14.874500114646544,\n    \"ssim\": 0.6352517604827881,\n    \"tce\": 0.03002598974853754,\n    \"brightness_flicker\": 0.0010620802640914917,\n    \"network_ms\": 462.5673666669172,\n    \"extra_ms\": 0.0\n  }\n}\n",
+      "stderr": ""
+    },
+    "video": {
+      "exit_code": 0,
+      "stdout": "{\n  \"frames\": 10,\n  \"width\": 320,\n  \"height\": 176,\n  \"fps\": 10.0,\n  \"mode\": \"improved\",\n  \"cuts\": 0,\n  \"seconds\": 0.5156044000032125\n}\n",
+      "stderr": ""
+    }
+  }
+}

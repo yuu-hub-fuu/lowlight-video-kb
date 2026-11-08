@@ -1,0 +1,114 @@
+{
+  "ours": {
+    "psnr": 19.564676731887868,
+    "ssim": 0.7720041528344156,
+    "psnr_gm": 20.758572719842164,
+    "ssim_gm": 0.8027812211049926,
+    "tce": 0.014539751786224799,
+    "warp_error": 0.003670071744448345,
+    "brightness_flicker": 0.0005241001252575103,
+    "runtime_ms": 64.77791583365615
+  },
+  "zero_dce": {
+    "psnr": 20.123757180536895,
+    "ssim": 0.693864475025071,
+    "psnr_gm": 22.867653215754288,
+    "ssim_gm": 0.6660793595843845,
+    "tce": 0.028114403747878543,
+    "warp_error": 0.02248434676660289,
+    "brightness_flicker": 0.0028635361162844173,
+    "runtime_ms": 295.07740666639523
+  },
+  "v1": {
+    "psnr": 20.29528671954529,
+    "ssim": 0.8280974361631607,
+    "psnr_gm": 23.322474050610808,
+    "ssim_gm": 0.8189374564422501,
+    "tce": 0.013811206206914851,
+    "warp_error": 0.005031264399783151,
+    "brightness_flicker": 0.0006079671237096333,
+    "runtime_ms": 337.86611333301454
+  },
+  "config": {
+    "alpha": 0.95,
+    "beta_pixel": 0.85,
+    "val_psnr_alpha": {
+      "0.5": 17.690359464667825,
+      "0.7": 17.699906494048193,
+      "0.85": 17.715188819083213,
+      "0.95": 17.7315741628893
+    },
+    "val_psnr_beta": {
+      "0.5": 17.710163358757356,
+      "0.7": 17.7266613028569,
+      "0.85": 17.739485257860338,
+      "0.95": 17.73515692490546
+    },
+    "net": "bgnet_kf",
+    "kalman": {
+      "psnr": 17.560392519400594,
+      "ssim": 0.6944826533397038,
+      "mean_gain": 0.2455408789217472,
+      "kind": "kalman",
+      "q0": 0.02,
+      "q1": 0.0,
+      "tau": 6
+    },
+    "rule": "alpha/beta = argmax validation scene-mean PSNR over {0.5,0.7,0.85,0.95}; frozen before reading test scenes",
+    "val_scenes": [
+      "pair7",
+      "pair8",
+      "pair9",
+      "pair10",
+      "pair11",
+      "pair12"
+    ],
+    "test_scenes": [
+      "pair13",
+      "pair15",
+      "pair21",
+      "pair23",
+      "pair31",
+      "pair33",
+      "pair50",
+      "pair52",
+      "pair58",
+      "pair60",
+      "pair68",
+      "pair70"
+    ],
+    "final_method": "卡尔曼+BGNet+像素融合(β=0.85)",
+    "final_rule": "final pipeline = argmax validation PSNR over all evaluated KBG variants (grid smoothing α / pixel fusion β / denoiser ablations); decided before reading test scenes",
+    "final_val": {
+      "psnr": 17.739485257860338,
+      "ssim": 0.7984903464714687,
+      "psnr_gm": 18.18420534426499,
+      "ssim_gm": 0.7981975585222244,
+      "tce": 0.014166938397904921,
+      "warp_error": 0.0026510999365388574,
+      "brightness_flicker": 0.0007271970353675594,
+      "runtime_ms": 47.99141111135315
+    },
+    "final_pipeline": {
+      "denoiser": "kalman",
+      "net": "bgnet_kf",
+      "grid_alpha": 0.0,
+      "pixel_beta": 0.85,
+      "exposure": true
+    }
+  },
+  "paired_vs_zero_dce": {
+    "dpsnr_mean_ci": [
+      -0.5590804486490274,
+      -1.6633646247065643,
+      0.460860366242832
+    ],
+    "dssim_mean_ci": [
+      0.0781396778093444,
+      0.05830039895450076,
+      0.0985003367749353
+    ],
+    "wins_psnr": 6,
+    "wins_ssim": 12
+  }
+}

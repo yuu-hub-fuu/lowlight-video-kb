@@ -1,0 +1,9 @@
+# 数据与大文件不入库：数据请用 tools/download_sdsd.py 从作者公开源获取
+data/
+logs/
+__pycache__/
+*.pyc
+*.mp4
+output/*.docx
+output/*.pdf
+.venv/

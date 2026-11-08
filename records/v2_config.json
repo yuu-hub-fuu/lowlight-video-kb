@@ -1,0 +1,68 @@
+{
+  "alpha": 0.95,
+  "beta_pixel": 0.85,
+  "val_psnr_alpha": {
+    "0.5": 17.690359464667825,
+    "0.7": 17.699906494048193,
+    "0.85": 17.715188819083213,
+    "0.95": 17.7315741628893
+  },
+  "val_psnr_beta": {
+    "0.5": 17.710163358757356,
+    "0.7": 17.7266613028569,
+    "0.85": 17.739485257860338,
+    "0.95": 17.73515692490546
+  },
+  "net": "bgnet_kf",
+  "kalman": {
+    "psnr": 17.560392519400594,
+    "ssim": 0.6944826533397038,
+    "mean_gain": 0.2455408789217472,
+    "kind": "kalman",
+    "q0": 0.02,
+    "q1": 0.0,
+    "tau": 6
+  },
+  "rule": "alpha/beta = argmax validation scene-mean PSNR over {0.5,0.7,0.85,0.95}; frozen before reading test scenes",
+  "val_scenes": [
+    "pair7",
+    "pair8",
+    "pair9",
+    "pair10",
+    "pair11",
+    "pair12"
+  ],
+  "test_scenes": [
+    "pair13",
+    "pair15",
+    "pair21",
+    "pair23",
+    "pair31",
+    "pair33",
+    "pair50",
+    "pair52",
+    "pair58",
+    "pair60",
+    "pair68",
+    "pair70"
+  ],
+  "final_method": "卡尔曼+BGNet+像素融合(β=0.85)",
+  "final_rule": "final pipeline = argmax validation PSNR over all evaluated KBG variants (grid smoothing α / pixel fusion β / denoiser ablations); decided before reading test scenes",
+  "final_val": {
+    "psnr": 17.739485257860338,
+    "ssim": 0.7984903464714687,
+    "psnr_gm": 18.18420534426499,
+    "ssim_gm": 0.7981975585222244,
+    "tce": 0.014166938397904921,
+    "warp_error": 0.0026510999365388574,
+    "brightness_flicker": 0.0007271970353675594,
+    "runtime_ms": 47.99141111135315
+  },
+  "final_pipeline": {
+    "denoiser": "kalman",
+    "net": "bgnet_kf",
+    "grid_alpha": 0.0,
+    "pixel_beta": 0.85,
+    "exposure": true
+  }
+}

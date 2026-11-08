@@ -1,0 +1,81 @@
+{
+  "baseline": {
+    "psnr": 15.674855252282143,
+    "ssim": 0.6438342703713311,
+    "tce": 0.028676920484794283,
+    "brightness_flicker": 0.0025575638277159766,
+    "runtime_ms": 70.78530111118904
+  },
+  "improved": {
+    "psnr": 15.768753998942195,
+    "ssim": 0.7771909842888514,
+    "tce": 0.015044445509155248,
+    "brightness_flicker": 0.000584421046887004,
+    "runtime_ms": 113.89778222300163
+  },
+  "delta": {
+    "psnr": 0.09389874666005227,
+    "ssim": 0.13335671391752024,
+    "tce": -0.013632474975639035
+  },
+  "validation_config": {
+    "beta": 0.85,
+    "align": true,
+    "gamma": 1.0,
+    "curve_beta": 0.0,
+    "gamma_baseline": 0.3,
+    "validation_scenes": [
+      "pair1",
+      "pair2",
+      "pair3",
+      "pair4",
+      "pair5",
+      "pair6"
+    ],
+    "test_scenes": [
+      "pair13",
+      "pair15",
+      "pair21",
+      "pair23",
+      "pair31",
+      "pair33",
+      "pair50",
+      "pair52",
+      "pair58",
+      "pair60",
+      "pair68",
+      "pair70"
+    ],
+    "selection": "Fixed gamma=1 after exposure calibration failed on the initial 12-scene extrapolation check; retain beta=.85 from validation; evaluate ONCE on untouched pair7-pair12",
+    "training": "Official network unchanged; beta selected on validation; gamma=1 fixed after diagnostic failure and before independent confirmation",
+    "confirmation_scenes": [
+      "pair7",
+      "pair8",
+      "pair9",
+      "pair10",
+      "pair11",
+      "pair12"
+    ],
+    "demonstration_scenes": [
+      "pair7",
+      "pair8",
+      "pair9",
+      "pair10",
+      "pair11",
+      "pair12",
+      "pair13",
+      "pair15",
+      "pair21",
+      "pair23",
+      "pair31",
+      "pair33",
+      "pair50",
+      "pair52",
+      "pair58",
+      "pair60",
+      "pair68",
+      "pair70"
+    ],
+    "initial_test_role": "Initial 12 scenes became diagnostic after revealing exposure-shift failure; they are not an untouched final test set for the revised method"
+  }
+}

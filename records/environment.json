@@ -1,0 +1,16 @@
+{
+  "python": "3.13.7",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "numpy": "2.3.5",
+    "opencv-python-headless": "5.0.0.93",
+    "scikit-image": "0.26.0",
+    "imageio-ffmpeg": "0.8.1",
+    "requests": "2.32.5",
+    "Pillow": "11.3.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "upstream_zero_dce": "e0f4adc54d0f23348c4a9b84acc08fe8778d5bfd",
+  "sdsd": "07330bb0ac124d2d56f6e92908d650dde3f7f7c2",
+  "weights_sha256": "a4395acb874f320375d9704997cef874eaaaaa26a1777ceb29a92b70f74c3612"
+}

@@ -1,0 +1,14 @@
+{
+  "raw_arrays": 1440,
+  "paired_frames": 720,
+  "scenes": 24,
+  "all_crc32_verified": true,
+  "source": "official SDSD Google Drive indoor_np split ZIP",
+  "color_conversion": "BGR uint8 -> RGB float32 /255",
+  "pairing": "sorted position independently per LQ and GT folder",
+  "groups": {
+    "validation": "pair1-pair6",
+    "initial_diagnostic": "12 author-listed indoor test scenes",
+    "confirmation": "pair7-pair12"
+  }
+}

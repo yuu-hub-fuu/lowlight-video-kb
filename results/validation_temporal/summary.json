@@ -1,0 +1,128 @@
+{
+  "scenes": [
+    "pair1",
+    "pair2",
+    "pair3",
+    "pair4",
+    "pair5",
+    "pair6"
+  ],
+  "frames_per_scene": 30,
+  "resolution": [
+    960,
+    512
+  ],
+  "methods": {
+    "Curve": {
+      "psnr": 16.767552376246314,
+      "ssim": 0.5928260852893195,
+      "tce": 0.04310204013753897,
+      "brightness_flicker": 0.0037364547976479067,
+      "runtime_ms": 46.69081499982389
+    },
+    "Exposure": {
+      "psnr": 16.767552376246314,
+      "ssim": 0.5928260852893195,
+      "tce": 0.04310204013753897,
+      "brightness_flicker": 0.0037364547976479067,
+      "runtime_ms": 46.86060333319296
+    },
+    "FlowRGB_0.3": {
+      "psnr": 16.93475046813052,
+      "ssim": 0.636129866540432,
+      "tce": 0.034643733006869924,
+      "brightness_flicker": 0.002423123751060891,
+      "runtime_ms": 77.67540999995819
+    },
+    "FlowRGB_0.6": {
+      "psnr": 17.048121648800766,
+      "ssim": 0.6800279572606086,
+      "tce": 0.027476765483018306,
+      "brightness_flicker": 0.001432747771009357,
+      "runtime_ms": 77.61446499999794
+    },
+    "FlowRGB_0.85": {
+      "psnr": 17.087946603543315,
+      "ssim": 0.7168886063827409,
+      "tce": 0.02237852767709343,
+      "brightness_flicker": 0.0008475038115380741,
+      "runtime_ms": 77.57455999997345
+    },
+    "Gamma": {
+      "psnr": 15.125494371775952,
+      "ssim": 0.6361825128396352,
+      "tce": 0.03524812760538068,
+      "brightness_flicker": 0.002593383862842149,
+      "runtime_ms": 46.684270555245654
+    },
+    "Input": {
+      "psnr": 7.259914859620568,
+      "ssim": 0.32810857875479593,
+      "tce": 0.019862827127692342,
+      "brightness_flicker": 0.0007523963580074347,
+      "runtime_ms": 0.0
+    },
+    "NaiveRGB": {
+      "psnr": 16.866306296120957,
+      "ssim": 0.6638643173707857,
+      "tce": 0.02340211977261579,
+      "brightness_flicker": 0.0012954242308451547,
+      "runtime_ms": 46.90823666660435
+    },
+    "Spatial": {
+      "psnr": 16.872987316127627,
+      "ssim": 0.6608253412776522,
+      "tce": 0.0363257824946409,
+      "brightness_flicker": 0.0037442425763792447,
+      "runtime_ms": 59.6398288886121
+    },
+    "ZeroDCE": {
+      "psnr": 14.237207988255038,
+      "ssim": 0.6028897600041495,
+      "tce": 0.03501499316858492,
+      "brightness_flicker": 0.002693159924868585,
+      "runtime_ms": 45.465572222140814
+    }
+  },
+  "candidates": {
+    "FlowRGB_0.3": {
+      "beta": 0.3,
+      "align": true,
+      "gamma": 0.6
+    },
+    "FlowRGB_0.6": {
+      "beta": 0.6,
+      "align": true,
+      "gamma": 0.6
+    },
+    "FlowRGB_0.85": {
+      "beta": 0.85,
+      "align": true,
+      "gamma": 0.6
+    },
+    "Exposure": {
+      "beta": 0,
+      "gamma": 0.6
+    },
+    "Spatial": {
+      "beta": 0,
+      "gamma": 0.6,
+      "spatial": true
+    },
+    "NaiveRGB": {
+      "beta": 0.6,
+      "align": false,
+      "gamma": 0.6
+    },
+    "Curve": {
+      "beta": 0,
+      "curve_beta": 0.0,
+      "gamma": 0.6
+    },
+    "Gamma": {
+      "beta": 0,
+      "gamma_input": 0.3
+    }
+  },
+  "timing": "Wall clock for shared network + method-specific processing; excludes metrics/IO, includes first-frame warm-up; not a standalone comparative speed benchmark"
+}

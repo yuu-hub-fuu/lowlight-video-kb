@@ -1,0 +1,31 @@
+{
+  "beta": 0.85,
+  "align": true,
+  "gamma": 0.6,
+  "curve_beta": 0.0,
+  "gamma_baseline": 0.3,
+  "validation_scenes": [
+    "pair1",
+    "pair2",
+    "pair3",
+    "pair4",
+    "pair5",
+    "pair6"
+  ],
+  "test_scenes": [
+    "pair13",
+    "pair15",
+    "pair21",
+    "pair23",
+    "pair31",
+    "pair33",
+    "pair50",
+    "pair52",
+    "pair58",
+    "pair60",
+    "pair68",
+    "pair70"
+  ],
+  "selection": "highest validation scene-mean PSNR among flow RGB beta=0.3/0.6/0.85",
+  "training": "No neural network retraining; official Zero-DCE checkpoint; postprocessing selected on validation only"
+}

@@ -1,0 +1,60 @@
+{
+  "scenes": [
+    "pair1"
+  ],
+  "frames_per_scene": 3,
+  "resolution": [
+    960,
+    512
+  ],
+  "methods": {
+    "Gamma": {
+      "psnr": 13.602445476269104,
+      "ssim": 0.6389719049135844,
+      "tce": 0.02754336129873991,
+      "brightness_flicker": 0.0008869841694831848,
+      "network_ms": 145.68009999978435,
+      "extra_ms": 0.0
+    },
+    "Input": {
+      "psnr": 7.015589291444113,
+      "ssim": 0.3246635893980662,
+      "tce": 0.016630372032523155,
+      "brightness_flicker": 1.1324882507324219e-06,
+      "network_ms": 145.68009999978435,
+      "extra_ms": 0.0
+    },
+    "Temporal": {
+      "psnr": 14.867904258717742,
+      "ssim": 0.634899357954661,
+      "tce": 0.03002799768000841,
+      "brightness_flicker": 0.0007105916738510132,
+      "network_ms": 145.68009999978435,
+      "extra_ms": 34.96843333293024
+    },
+    "ZeroDCE": {
+      "psnr": 14.874499450254667,
+      "ssim": 0.6352518399556478,
+      "tce": 0.030025968328118324,
+      "brightness_flicker": 0.0010620877146720886,
+      "network_ms": 145.68009999978435,
+      "extra_ms": 0.0
+    }
+  },
+  "candidates": {
+    "Temporal": {
+      "beta": 0.6,
+      "align": true,
+      "gamma": 1.0
+    }
+  },
+  "pairing": "independent filename sorting and positional pairing, as in SDSD upstream",
+  "runtime_note": "network_ms shared; extra_ms includes alignment when used; excludes metrics and IO; first-frame warm-up retained",
+  "software": {
+    "python": "3.13.7",
+    "torch": "2.6.0+cu124",
+    "opencv": "5.0.0",
+    "device": "cuda"
+  },
+  "weights_sha256": "a4395acb874f320375d9704997cef874eaaaaa26a1777ceb29a92b70f74c3612"
+}

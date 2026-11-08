@@ -1,0 +1,93 @@
+{
+  "scenes": [
+    "pair7",
+    "pair8",
+    "pair9",
+    "pair10",
+    "pair11",
+    "pair12"
+  ],
+  "frames_per_scene": 30,
+  "resolution": [
+    960,
+    512
+  ],
+  "methods": {
+    "Final": {
+      "psnr": 15.768753998942195,
+      "ssim": 0.7771909842888514,
+      "tce": 0.015044445509155248,
+      "brightness_flicker": 0.000584421046887004,
+      "runtime_ms": 113.89778222300163
+    },
+    "Gamma": {
+      "psnr": 16.670393746749877,
+      "ssim": 0.7018119881550472,
+      "tce": 0.02556728692083009,
+      "brightness_flicker": 0.002048809266440399,
+      "runtime_ms": 72.28485555569932
+    },
+    "Input": {
+      "psnr": 7.559965502517978,
+      "ssim": 0.3175057531230979,
+      "tce": 0.014411829077456704,
+      "brightness_flicker": 0.000657301823139256,
+      "runtime_ms": 0.0
+    },
+    "NaiveRGB": {
+      "psnr": 15.654831809457653,
+      "ssim": 0.7558987806240718,
+      "tce": 0.012256744834219757,
+      "brightness_flicker": 0.0005192738489595097,
+      "runtime_ms": 72.53272111132294
+    },
+    "RejectedExposure": {
+      "psnr": 17.046475011876417,
+      "ssim": 0.7619325409332912,
+      "tce": 0.016276143865938158,
+      "brightness_flicker": 0.0006278328190408965,
+      "runtime_ms": 113.33509722252428
+    },
+    "Spatial": {
+      "psnr": 15.72951946344412,
+      "ssim": 0.754662510752678,
+      "tce": 0.02129458431582684,
+      "brightness_flicker": 0.002570844230526012,
+      "runtime_ms": 88.97634722238257
+    },
+    "ZeroDCE": {
+      "psnr": 15.674855252282143,
+      "ssim": 0.6438342703713311,
+      "tce": 0.028676920484794283,
+      "brightness_flicker": 0.0025575638277159766,
+      "runtime_ms": 70.78530111118904
+    }
+  },
+  "candidates": {
+    "Final": {
+      "beta": 0.85,
+      "align": true,
+      "gamma": 1.0
+    },
+    "NaiveRGB": {
+      "beta": 0.85,
+      "align": false,
+      "gamma": 1.0
+    },
+    "Spatial": {
+      "beta": 0,
+      "gamma": 1.0,
+      "spatial": true
+    },
+    "RejectedExposure": {
+      "beta": 0.85,
+      "align": true,
+      "gamma": 0.6
+    },
+    "Gamma": {
+      "beta": 0,
+      "gamma_input": 0.3
+    }
+  },
+  "timing": "Wall clock for shared network + method-specific processing; excludes metrics/IO, includes first-frame warm-up; not a standalone comparative speed benchmark"
+}

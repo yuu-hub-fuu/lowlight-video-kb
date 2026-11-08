@@ -1,0 +1,30 @@
+{
+  "gamma": 0.6,
+  "beta": 0.0,
+  "align": true,
+  "validation_scenes": [
+    "pair1",
+    "pair2",
+    "pair3",
+    "pair4",
+    "pair5",
+    "pair6"
+  ],
+  "test_scenes": [
+    "pair13",
+    "pair15",
+    "pair21",
+    "pair23",
+    "pair31",
+    "pair33",
+    "pair50",
+    "pair52",
+    "pair58",
+    "pair60",
+    "pair68",
+    "pair70"
+  ],
+  "rule": "validation PSNR for gamma; minimum validation TCE with <=0.05dB PSNR loss, INCLUDING unchanged baseline",
+  "gamma_baseline": 0.3,
+  "curve_validation_result": "All curve smoothing variants increased paired TCE; unchanged baseline retained"
+}

@@ -1,0 +1,21 @@
+{
+  "model": "M2",
+  "c0": 0.25774815678596497,
+  "c1": 0.45468512177467346,
+  "loso_cv_mean_abs_log_error": {
+    "M0": 0.20035659605089354,
+    "M1": 0.20726906363578404,
+    "M2": 0.16368737463455865
+  },
+  "note": "mean |log error|; 0.10 \u2248 \u00b110% brightness. Validation error recorded for reference only, not used for selection.",
+  "val_mean_abs_log_error": 0.07566789320359628,
+  "val_by_scene": {
+    "pair7": 0.04689478129148483,
+    "pair8": 0.0738712027668953,
+    "pair9": 0.027027519419789314,
+    "pair10": 0.08518784493207932,
+    "pair11": 0.14411203563213348,
+    "pair12": 0.0769139751791954
+  },
+  "train_corr_scene_means": 0.5788569503144753
+}

@@ -1,0 +1,22 @@
+{
+  "validation": {
+    "scenes": 6,
+    "frames": 180,
+    "methods": 16,
+    "psnr_recomputed": true
+  },
+  "test": {
+    "scenes": 12,
+    "frames": 360,
+    "methods": 9,
+    "psnr_recomputed": true
+  },
+  "confirmation": {
+    "scenes": 6,
+    "frames": 180,
+    "methods": 7,
+    "psnr_recomputed": true
+  },
+  "configuration_hashes_match": true,
+  "scene_groups_disjoint": true
+}

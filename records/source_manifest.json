@@ -1,0 +1,29 @@
+{
+  "vendor/zero_dce/model.py": {
+    "bytes": 1772,
+    "sha256": "8adcc8b73b5bfdb1b6e5a16e672c59a7f8f664ee21aafc3eea44bb316d4b97f8",
+    "git_blob_sha1": "3b710a5a33b38ee742c200c69b060f05246c7d1c"
+  },
+  "vendor/zero_dce/README.upstream.md": {
+    "bytes": 3027,
+    "sha256": "095d2f1039d2c111265c88243196644e0310898b1e63157610cfb8569293c006",
+    "git_blob_sha1": "f14c936d694aa40620d5ca6b9a58cf4ce419e669"
+  },
+  "weights/Epoch99.pth": {
+    "bytes": 320017,
+    "sha256": "a4395acb874f320375d9704997cef874eaaaaa26a1777ceb29a92b70f74c3612",
+    "git_blob_sha1": "6f68e96209ff6e2d4b580f2ebc077f24ad231d9b"
+  },
+  "records/final_config.json": {
+    "bytes": 1346,
+    "sha256": "cb64a48ffc773752f1b9b03ed74d50b57e703d89d42fa4f7922be9c3fd77f3eb"
+  },
+  "records/initial_config.json": {
+    "bytes": 631,
+    "sha256": "ee9a2418750d2300bfbc6d691620066481989757665b781b5b1732e2ec49c030"
+  },
+  "records/confirmation_frozen_config.json": {
+    "bytes": 1317,
+    "sha256": "c6f26c1d7f08c035f982218aff8c2c154de3506b99f1239c6c7a164bdab199d8"
+  }
+}

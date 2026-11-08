@@ -1,0 +1,13 @@
+{
+  "observation": "Fixed gamma .6 improved validation but harmed initial 12-scene PSNR. Motion filtering alone retained brightness and improved SSIM.",
+  "action": "Disable exposure calibration; no new parameter scan; freeze gamma1 beta.85 before downloading/reading pair7-pair12",
+  "confirmation_scenes": [
+    "pair7",
+    "pair8",
+    "pair9",
+    "pair10",
+    "pair11",
+    "pair12"
+  ],
+  "original_results_preserved": "results/test"
+}

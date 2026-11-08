@@ -1,0 +1,7 @@
+torch>=2.6,<3
+numpy>=2,<3
+opencv-python-headless>=4.8,<6
+imageio-ffmpeg>=0.6,<1
+requests>=2.31,<3
+scikit-image>=0.24,<1
+Pillow>=10,<13

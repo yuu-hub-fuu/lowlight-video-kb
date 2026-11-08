@@ -1,0 +1,212 @@
+{
+  "scenes": [
+    "pair1",
+    "pair2",
+    "pair3",
+    "pair4",
+    "pair5",
+    "pair6"
+  ],
+  "frames_per_scene": 30,
+  "resolution": [
+    960,
+    512
+  ],
+  "methods": {
+    "Exposure_0.6": {
+      "psnr": 16.767552363876153,
+      "ssim": 0.5928260871105724,
+      "tce": 0.04310204039445553,
+      "brightness_flicker": 0.0037364549418396607,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 12.261098333369269
+    },
+    "Exposure_0.8": {
+      "psnr": 16.157362506804947,
+      "ssim": 0.5980255123641757,
+      "tce": 0.03873645180258258,
+      "brightness_flicker": 0.0031387574643630886,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 12.394474999948416
+    },
+    "Exposure_1": {
+      "psnr": 14.237207988255038,
+      "ssim": 0.6028897600041495,
+      "tce": 0.03501499316858492,
+      "brightness_flicker": 0.002693159924868585,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.05905611105845309
+    },
+    "Exposure_1.2": {
+      "psnr": 12.54393406649507,
+      "ssim": 0.5945655104186799,
+      "tce": 0.03197506298150481,
+      "brightness_flicker": 0.0023454456801807015,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 12.033125555636715
+    },
+    "Gamma": {
+      "psnr": 13.397909109460175,
+      "ssim": 0.6295633210076225,
+      "tce": 0.030705691186775422,
+      "brightness_flicker": 0.001956690128998884,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Gamma_0.2": {
+      "psnr": 13.960225221445183,
+      "ssim": 0.6303329212798013,
+      "tce": 0.04096116776438965,
+      "brightness_flicker": 0.003536782462889833,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Gamma_0.3": {
+      "psnr": 15.125494371775952,
+      "ssim": 0.6361825128396352,
+      "tce": 0.03524812760538068,
+      "brightness_flicker": 0.002593383862842149,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Gamma_0.4": {
+      "psnr": 13.397909109460175,
+      "ssim": 0.6295633210076225,
+      "tce": 0.030705691186775422,
+      "brightness_flicker": 0.001956690128998884,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Gamma_0.5": {
+      "psnr": 11.555831184072643,
+      "ssim": 0.6111180775695377,
+      "tce": 0.027291420547441502,
+      "brightness_flicker": 0.0015348010381620407,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Gamma_0.6": {
+      "psnr": 10.15256678696385,
+      "ssim": 0.5803549220164617,
+      "tce": 0.024674503882040923,
+      "brightness_flicker": 0.0012407952394683302,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "Input": {
+      "psnr": 7.259914859620568,
+      "ssim": 0.32810857875479593,
+      "tce": 0.019862827127692342,
+      "brightness_flicker": 0.0007523963580074347,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    },
+    "NaiveEMA": {
+      "psnr": 14.238903811520947,
+      "ssim": 0.6022081570492851,
+      "tce": 0.035189261981125534,
+      "brightness_flicker": 0.00206901522673649,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 6.0205216667074835
+    },
+    "Temporal_0.3": {
+      "psnr": 14.237412091519962,
+      "ssim": 0.6024588959084617,
+      "tce": 0.03503043799736034,
+      "brightness_flicker": 0.0023576005710721397,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 38.12851833346132
+    },
+    "Temporal_0.6": {
+      "psnr": 14.237937778147066,
+      "ssim": 0.6020281430747774,
+      "tce": 0.03505554319969539,
+      "brightness_flicker": 0.002106989241505442,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 38.74644166682831
+    },
+    "Temporal_0.85": {
+      "psnr": 14.239661128938971,
+      "ssim": 0.6017331404818429,
+      "tce": 0.03507349763236854,
+      "brightness_flicker": 0.001959172723203647,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 38.56957611112901
+    },
+    "ZeroDCE": {
+      "psnr": 14.237207988255038,
+      "ssim": 0.6028897600041495,
+      "tce": 0.03501499316858492,
+      "brightness_flicker": 0.002693159924868585,
+      "network_ms": 45.026429999941485,
+      "extra_ms": 0.0
+    }
+  },
+  "candidates": {
+    "Gamma_0.2": {
+      "gamma": 0.2,
+      "beta": 0
+    },
+    "Gamma_0.3": {
+      "gamma": 0.3,
+      "beta": 0
+    },
+    "Gamma_0.4": {
+      "gamma": 0.4,
+      "beta": 0
+    },
+    "Gamma_0.5": {
+      "gamma": 0.5,
+      "beta": 0
+    },
+    "Gamma_0.6": {
+      "gamma": 0.6,
+      "beta": 0
+    },
+    "Exposure_0.6": {
+      "gamma": 0.6,
+      "beta": 0
+    },
+    "Exposure_0.8": {
+      "gamma": 0.8,
+      "beta": 0
+    },
+    "Exposure_1": {
+      "gamma": 1.0,
+      "beta": 0
+    },
+    "Exposure_1.2": {
+      "gamma": 1.2,
+      "beta": 0
+    },
+    "Temporal_0.3": {
+      "beta": 0.3,
+      "align": true,
+      "gamma": 1.0
+    },
+    "Temporal_0.6": {
+      "beta": 0.6,
+      "align": true,
+      "gamma": 1.0
+    },
+    "Temporal_0.85": {
+      "beta": 0.85,
+      "align": true,
+      "gamma": 1.0
+    },
+    "NaiveEMA": {
+      "beta": 0.6,
+      "align": false,
+      "gamma": 1.0
+    }
+  },
+  "pairing": "independent filename sorting and positional pairing, as in SDSD upstream",
+  "runtime_note": "network_ms shared; extra_ms includes alignment when used; excludes metrics and IO; first-frame warm-up retained",
+  "software": {
+    "python": "3.13.7",
+    "torch": "2.6.0+cu124",
+    "opencv": "5.0.0",
+    "device": "cuda"
+  },
+  "weights_sha256": "a4395acb874f320375d9704997cef874eaaaaa26a1777ceb29a92b70f74c3612"
+}
